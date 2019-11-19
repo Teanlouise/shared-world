@@ -1,4 +1,4 @@
-![develop_shared](https://user-images.githubusercontent.com/19520346/69126780-b00a8980-0af4-11ea-9dba-4fc6c66bbec3.PNG)
+![deploy_shared](https://user-images.githubusercontent.com/19520346/69126964-168fa780-0af5-11ea-8384-73e1bda8b66a.PNG)
 
 [Overview](https://teanlouise.github.io/shared-world)     |     [Develop](https://teanlouise.github.io/shared-world/develop)    |  [Deploy](https://teanlouise.github.io/shared-world/deploy)    |   [Data](https://teanlouise.github.io/shared-world-data)
 
