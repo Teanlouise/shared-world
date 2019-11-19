@@ -19,7 +19,7 @@ The application was written in Django and React, deployed on Google App Engine t
 ### Workflow
 ![workflow](https://user-images.githubusercontent.com/19520346/69107833-6ef78280-0abe-11ea-97e9-7345c40b4363.png)
 
-# PART 1 - DEVELOP
+# (1) DEVELOP
 ![part1](https://user-images.githubusercontent.com/19520346/69107835-7028af80-0abe-11ea-92c0-1b3985f750de.png)
 
 ### Getting started
@@ -37,7 +37,7 @@ See [shared-world-backend](https://teanlouise.github.io/shared-world-backend) fo
 ### Frontend - React
 See [shared-world-frontend](https://teanlouise.github.io/shared-world-frontend) for more information.
 
-# PART 2 - DEPLOY
+# (2) DEPLOY
 ![part2](https://user-images.githubusercontent.com/19520346/69107982-f513c900-0abe-11ea-8cd3-2a6962e6b1cb.png)
 
 ### Getting Started
@@ -45,9 +45,6 @@ See [shared-world-frontend](https://teanlouise.github.io/shared-world-frontend) 
 - Get Cloud SDK
 
 ### Database - Cloud SQL
-
-
-# Database
 
 ![database](https://user-images.githubusercontent.com/19520346/69109793-833e7e00-0ac4-11ea-835f-0c890cde4803.png)
 
@@ -88,9 +85,6 @@ python manage.py createsuperuser
 ```
 
 ### File Storage - Cloud Storage
-
-
-# Storage
 
 ![storage](https://user-images.githubusercontent.com/19520346/69108304-f09be000-0abf-11ea-8680-6530ecb30c38.png)
 
@@ -139,7 +133,10 @@ gcloud app deploy
 -	Check that running once finished with provided url (shared-world.appspot.com)
 
 ### Frontend - Google Firebase
+
 ![frontend](https://user-images.githubusercontent.com/19520346/69108491-8c2d5080-0ac0-11ea-815b-a0c3ead9c517.png)
+
+Originally to be deployed on app engine, however this was not the best option. Instea, deployed on Google Firebase which is designed for easy deployment of frontend apps. Due to the api nature of this program and Django they could be deployed seperately. This structure provided greater effeciency and results then when running together locally.
 
 -	Go to firebase console and create a project
 -	Install Firebase tools
@@ -159,7 +156,8 @@ npm run build
 firebase deploy
 ```
 
-# PART 3 - DATA
+
+# (3) DATA
 
 ![part_3_data](https://user-images.githubusercontent.com/19520346/69108540-b121c380-0ac0-11ea-9577-55a4eae5fd28.png)
 
