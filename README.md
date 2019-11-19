@@ -1,6 +1,8 @@
+[Back to Home](https://teanlouise.github.io)
+
 ![OVERVIEW](https://user-images.githubusercontent.com/19520346/69125846-7769b080-0af2-11ea-8de9-5cf021b2e0ba.PNG)
 
-[Overview](https://teanlouise.github.io/shared-world)     |     [Develop](https://teanlouise.github.io/shared-world/develop)    |   [Deploy](https://teanlouise.github.io/shared-world/deploy)    |   [Data](https://teanlouise.github.io/shared-world-data)
+Overview    |     [Develop](https://teanlouise.github.io/shared-world/develop)    |   [Deploy](https://teanlouise.github.io/shared-world/deploy)    |   [Data](https://teanlouise.github.io/shared-world-data)
 
 # Purpose
 A cloud application solution for overtourism and promoting responsible travel by providing a platform where travellers explore destinations using a map displaying tourist-to-local ratios and view blogs filtered by their interests. It is a platform where responsible, conscientious travellers can be made. 
