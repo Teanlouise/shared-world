@@ -2,7 +2,7 @@
 
 ![deploy_shared](https://user-images.githubusercontent.com/19520346/69126964-168fa780-0af5-11ea-8384-73e1bda8b66a.PNG)
 
-[Overview](https://teanlouise.github.io/shared-world)     |     Develop   |  [Deploy](https://teanlouise.github.io/shared-world/deploy)    |   [Data](https://teanlouise.github.io/shared-world-data)
+[Overview](https://teanlouise.github.io/shared-world)     |     [Develop](https://teanlouise.github.io/shared-world/develop)   |  Deploy    |   [Data](https://teanlouise.github.io/shared-world-data)
 
 This application is deployed on Google Cloud Platform using App Engine Flexible Environment, CloudSQL (PostgreSQL), Cloud Storage and Firebase.
 
