@@ -8,7 +8,7 @@ This application is deployed on Google Cloud Platform using App Engine Flexible 
 
 - Get Cloud SDK
 
-### Database - Cloud SQL
+# Database - Cloud SQL
 
 ![database](https://user-images.githubusercontent.com/19520346/69109793-833e7e00-0ac4-11ea-835f-0c890cde4803.png)
 
@@ -48,13 +48,13 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-### File Storage - Cloud Storage
+# File Storage - Cloud Storage
 
 ![storage](https://user-images.githubusercontent.com/19520346/69108304-f09be000-0abf-11ea-8680-6530ecb30c38.png)
 
 All static and media files are on Google Cloud Storage (for this application this was the best choice over a DFS)
 
-**Media:**
+### Media:
 Use [Django Storage](https://django-storages.readthedocs.io/en/latest/backends/gcloud.html) to allow media files to be served from Google Cloud Storage. Media images are stored in seperate folder for each app (post_pics, country_pics and profile_pics).
 
 -	Go to GCP console and create service account under IAM 
@@ -67,12 +67,12 @@ pip install django-storage
 ```
 -	Add GCS details to Django settings.py with it as the default file storage
 
-**Static:**
+### Static:
 -	Create bucket in google cloud (shared-world-static)
 -	Make bucket public
 -	Add to settings.py
 
-### Backend - Google App Engine
+# Backend - Google App Engine
 
 ![backend](https://user-images.githubusercontent.com/19520346/69108485-83d51580-0ac0-11ea-92ae-5e2776a04f54.png)
 
@@ -96,7 +96,7 @@ gcloud app deploy
 ```
 -	Check that running once finished with provided url (shared-world.appspot.com)
 
-### Frontend - Google Firebase
+# Frontend - Google Firebase
 
 ![frontend](https://user-images.githubusercontent.com/19520346/69108491-8c2d5080-0ac0-11ea-815b-a0c3ead9c517.png)
 
