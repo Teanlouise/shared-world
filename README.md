@@ -18,3 +18,11 @@ The application was written in Django and React, deployed on Google App Engine t
 
 # Workflow
 ![workflow](https://user-images.githubusercontent.com/19520346/69107833-6ef78280-0abe-11ea-97e9-7345c40b4363.png)
+
+There are three main parts to this project:
+
+1. [Develop](https://teanlouise.github.io/shared-world/develop)
+
+2. [Deploy](https://teanlouise.github.io/shared-world/deploy)
+
+3. [Data](https://teanlouise.github.io/shared-world-data)
