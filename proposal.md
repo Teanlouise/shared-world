@@ -1,10 +1,5 @@
 
-
- 
-A cloud application solution for overtourism and promoting responsible travel
-
-
-INFS3208: Introduction to Cloud Computing / Assignment 1 - Cloud Application Proposal
+![shared-world](https://user-images.githubusercontent.com/19520346/69200808-feb53380-0b87-11ea-89ff-3d18950705b0.PNG)
 
 # PROJECT SUMMARY
 
@@ -33,7 +28,7 @@ A majority of this application will be run from Google Cloud Platform (GCP), whi
 
 ![ass1_tech](https://user-images.githubusercontent.com/19520346/69199882-32db2500-0b85-11ea-9791-fd79f4ebc9f8.PNG)
  		 
-##### COMPUTE
+#### COMPUTE
 
 Platform-as-a-Service removes the concern for managing or controlling the underlying infrastructure. It provides platform-layer services and automatic scaling, allowing the developer to focus on deployment and management of the application (Amazon, 2019; Mell & Grance, 2011). **Google App Engine Flexible Environment** will be used to deploy this application as it is a fully managed platform, offering fast development and deployment, simple administration and effortless scalability with customised containers. It  “handles deploying code to a cluster, monitoring, failover and launching application instances as necessary” (Zhang, Erl, Mahmood & Puttini, 2013). It is open, flexible, supports popular languages (i.e. Django and React), offers application security and so much more (Google, 2019).
 
@@ -41,7 +36,7 @@ Platform-as-a-Service removes the concern for managing or controlling the underl
 
 Alternatively to App Engine, this application could be managed using Kubernetes Engine with Docker as Django is compatible and it connects with Spark and other GCP services. Although Kubernetes allows greater scalability, control and customisation, for this application the App Engine offers more support as a first-time developer for an application that doesn’t require the additional cluster management of its resources (Kubernetes, 2019; Prin, 2016).
 
-##### BIG DATA
+#### BIG DATA
 
 **Cloud Dataproc** is a managed Spark service for distributed data processing. Dataproc automates Spark cluster creating, simplifies configuration and management of clusters with built-in monitoring and utilisation reports. They are created for workloads when needed and terminated when not, thus minimising cost and easier management. It runs Spark on YARN and also natively reads data and writes results in Cloud Storage (faster access) and Big Query (Google, 2019; Stafford, 2018).
 
@@ -49,13 +44,13 @@ Alternatively to App Engine, this application could be managed using Kubernetes 
 
 **BigQuery** is a fully managed data analysis service and highly scalable data warehouse. It provides real-time analytics, continuous backup and high-availability whilst using standard SQL. Ingested data can be stored directly with up to1TB of data and 10GB storage per month always free (Google, 2019; Campoy, 2015). It will be used to analyse a public dataset for the interactive map of countries.
 
-##### STORAGE
+#### STORAGE
 
 **Cloud Storage** is a service for storing and accessing data. It shares the same performance and scalability features of other GCP services as well as advanced security and sharing capabilities. It is highly durable and available, and data is organised into individual buckets. It offers data backup, disaster recovery, content distribution and native accessibility for Cloud Dataproc and Big Query (Google, 2019; Murray, 2016). It will be used as the distributed storage layer for App Engine.
 
 **Cloud SQL** is a fully-managed service that maintains, manages and administers a relational database offering MySQL engine with built-in support for replication. It offers backup, high availability and built-in support for access-control of instances. It is accessible from apps running on App Engine, supports standard connection drivers and third-party app frameworks (such as Django).  It will be used to store user credentials and Dataproc can also pull data from here to insert into other storage systems (Google, 2019; Datatonic, 2019).
 
-##### SOFTWARE
+#### SOFTWARE
 
 **Django** is an open-source framework built on Python to accommodate any modern web app structures with a massive community and support. Django is directly supported by App Engine so it has the same infrastructure and scalability capacity as the other GCP services (Vamp, 2018; Rogulski, 2018; Garner, 2018; Franklin, 2019). It works best with SQL relational databases (i.e. Cloud SQL) and there is support for creating event instances with Spark (Kestenholz, 2018; Tan, 2018). Django is best stacked with javascript, and due to the high performance and ease of use of the **React** framework, the two are a perfect combination for development with minimum amount of code (Bouchefra, 2018; Emmanuel, 2018; Yoyo, 2019; Majid, 2018).
 
