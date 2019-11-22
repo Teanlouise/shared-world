@@ -1,6 +1,14 @@
 
 ![shared-world](https://user-images.githubusercontent.com/19520346/69200808-feb53380-0b87-11ea-89ff-3d18950705b0.PNG)
 
+This is the proposal for a cloud application, 'shared world', as submission for Assignment 1 for INFS3208 at University of Queensland. The project was to be completed individually and entirely my own work (code and document). 
+
+The goal of the assignment was to propose a cloud application driven by an authentic project which represents a need in the "real world". The proposal was the opportunity to receive feedback prior to implementing it in Assignment 2.  This proposal recieved full marks with no additional feedback and was implemented successfully.
+
+The requirements of the project were evidence of **scalability**, **high availability** and **low maintenance**. The architecture of the cloud computing system can potentially support writes on the level Millions and thousands of selects including aggregate queries/sec. The application can be deployable to a cloud with a budget of AU$100,000 per year, scalable with ability to accommodate 5,000 users and implementable given current technology, timeframe, budget. Either a relationational or non-relational database can be used but the database design must be described. There must be a distributed computing framework.
+
+
+
 # PROJECT SUMMARY
 
 ### THE PROBLEM
@@ -77,31 +85,31 @@ The millennial attention span is just 8 seconds, with a preference of photo and 
 
 ![App_Workflow](https://user-images.githubusercontent.com/19520346/69200228-40dd7580-0b86-11ea-93d4-c874d30e9518.jpg)
   
-1.	LOGIN/SIGNUP – This is the main page where users login or sign-up. Since this application is personalised a user must have an account. They will be asked for username, email and password at sign-up. Once they login they will be able to upload their photo, description and choose their interests on their profile page.
+(1) LOGIN/SIGNUP – This is the main page where users login or sign-up. Since this application is personalised a user must have an account. They will be asked for username, email and password at sign-up. Once they login they will be able to upload their photo, description and choose their interests on their profile page.
 
 ![(1) shared world - LOGIN #](https://user-images.githubusercontent.com/19520346/69200263-5a7ebd00-0b86-11ea-9697-2e086551fceb.png)
 
-2.	ABOUT – This is a static page that explains to users how to use shared.world
+(2) ABOUT – This is a static page that explains to users how to use shared.world
  
 ![(2) shared world - ABOUT #](https://user-images.githubusercontent.com/19520346/69200264-5c488080-0b86-11ea-9c3f-79945649c529.png) 
  
-3.	SEARCH – This is the first page of a user’s search. It shows a static map and allows users to select a continent from the dropdown.
+(3) SEARCH – This is the first page of a user’s search. It shows a static map and allows users to select a continent from the dropdown.
 
 ![(3) shared world - HOME #](https://user-images.githubusercontent.com/19520346/69200270-5e124400-0b86-11ea-9550-15b725cdaa0f.png)
 
-4.	CONTINENT – An interactive Google Maps view of the selected continent is displayed. Each country is coloured based on their visitor-to-resident ratio. From here users select their country of choice from the map or drop-down menu.
+(4) CONTINENT – An interactive Google Maps view of the selected continent is displayed. Each country is coloured based on their visitor-to-resident ratio. From here users select their country of choice from the map or drop-down menu.
 
 ![(4) shared world - CHOOSE COUNTRY #](https://user-images.githubusercontent.com/19520346/69200274-5fdc0780-0b86-11ea-9bf4-d58128f7b11d.png)
 
-5.	COUNTRY – The user is now shown the country of their choice. On the left hand side will be generic and statistical tourism information about the country. To the right are the customised blog posts. A photo, title, by tagline and short description is shown of each.
+(5) COUNTRY – The user is now shown the country of their choice. On the left hand side will be generic and statistical tourism information about the country. To the right are the customised blog posts. A photo, title, by tagline and short description is shown of each.
 
 ![(5) shared world - COUNTRY EDIT #](https://user-images.githubusercontent.com/19520346/69200275-61a5cb00-0b86-11ea-8eb2-644e332dc72b.png)
 
-6.	BLOG – After selecting the blog on the previous page users are brought to the post. On the left is information about the poster which is extracted from their profile. On the right is the blog post with the option to save.
+(6) BLOG – After selecting the blog on the previous page users are brought to the post. On the left is information about the poster which is extracted from their profile. On the right is the blog post with the option to save.
 
 ![(6) shared world - BLOG PAGE #](https://user-images.githubusercontent.com/19520346/69200279-636f8e80-0b86-11ea-90a8-5a524a00afc6.png)
 
-7.	PROFILE – On the left is the user’s photo, username and short description. Underneath this will be their interests. To the right are their published and saved blogs.
+(7) PROFILE – On the left is the user’s photo, username and short description. Underneath this will be their interests. To the right are their published and saved blogs.
  
 ![(7) shared world - ACCOUNT #](https://user-images.githubusercontent.com/19520346/69200289-666a7f00-0b86-11ea-8859-4e39dabdf83b.png)
  
