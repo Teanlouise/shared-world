@@ -1,6 +1,6 @@
 [Back to Home](https://teanlouise.github.io)
 
-![OVERVIEW](https://user-images.githubusercontent.com/19520346/69125846-7769b080-0af2-11ea-8de9-5cf021b2e0ba.PNG)
+![sw_overview](https://user-images.githubusercontent.com/19520346/71760727-ed44a280-2f0d-11ea-8775-6c077414c731.PNG)
 
 Overview    |     [Develop](https://teanlouise.github.io/shared-world/develop)    |   [Deploy](https://teanlouise.github.io/shared-world/deploy)    |   [Data](https://teanlouise.github.io/shared-world-data)
 
@@ -18,12 +18,12 @@ A cloud application solution for overtourism and promoting responsible travel by
 4.	improve quality of travel blogs
 
 # Technologies
-![tech](https://user-images.githubusercontent.com/19520346/69107831-6dc65580-0abe-11ea-9e97-77a83787938f.png)
+![sw_tech](https://user-images.githubusercontent.com/19520346/71760763-6d6b0800-2f0e-11ea-9d7f-623e9e961fd4.PNG)
 
 The application was written in Django and React, deployed on Google App Engine through docker and Firebase respectively, the database hosted on Cloud SQL and the file storage on Cloud Storage. BigQuery was used to query data from the World Bank dataset, Apache Spark clusters were managed via Dataproc in which a Scala program was run using SparkSQL, as well as an Apache Zeppelin notebook for data analysis using Scala and a Jupyter notebook to create a linear regression model with PySpark. 
 
 # Workflow
-![workflow](https://user-images.githubusercontent.com/19520346/69107833-6ef78280-0abe-11ea-97e9-7345c40b4363.png)
+![sw_workflow](https://user-images.githubusercontent.com/19520346/71760770-99868900-2f0e-11ea-8234-a549fa78ff79.PNG)
 
 The application was written in Django and React, deployed on Google App Engine through docker and Firebase respectively, the database hosted on Cloud SQL and the file storage on Cloud Storage. BigQuery was used to query data from the World Bank dataset, Apache Spark clusters were managed via Dataproc in which a Scala program was run using SparkSQL, as well as an Apache Zeppelin notebook for data analysis using Scala and a Jupyter notebook to create a linear regression model with PySpark.
 
