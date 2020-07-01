@@ -1,18 +1,17 @@
-
-![shared-world](https://user-images.githubusercontent.com/19520346/69200808-feb53380-0b87-11ea-89ff-3d18950705b0.PNG)
+![sw_proposal_title](./images/sw_proposal_title.PNG)
 
 This is the proposal for a cloud application, 'shared world', as submission for Assignment 1 for INFS3208 at University of Queensland. The project was to be completed individually and entirely my own work (code and document). 
 
 The goal of the assignment was to propose a cloud application driven by an authentic project which represents a need in the "real world". The proposal was the opportunity to receive feedback prior to implementing it in Assignment 2.  This proposal recieved full marks with no additional feedback and was implemented successfully.
 
-The requirements of the project were evidence of **scalability**, **high availability** and **low maintenance**. The architecture of the cloud computing system can potentially support writes on the level Millions and thousands of selects including aggregate queries/sec. The application can be deployable to a cloud with a budget of AU$100,000 per year, scalable with ability to accommodate 5,000 users and implementable given current technology, timeframe, budget. Either a relationational or non-relational database can be used but the database design must be described. There must be a distributed computing framework.
+The requirements of the project were evidence of **scalability**, **high availability** and **low maintenance**. The architecture of the cloud computing system can potentially support writes on the level Millions and thousands of selects including aggregate queries/sec. The application can be deployable to a cloud with a budget of AU$100,000 per year, scalable with ability to accommodate 5,000 users and implementable given current technology, timeframe, budget. Either a relational or non-relational database can be used but the database design must be described. There must be a distributed computing framework.
 
 
 
 # PROJECT SUMMARY
 
 ### THE PROBLEM
-The world is more open than it has ever been before. We are in an amazing time of globalisation, where cheap flights, social media and increased wages means travelling is no longer just a luxury but many of us have the opportunity to travel frequently, almost anywhere. People are going to keep travelling and there is no doubt that travel broadens our perspectives and narrows our prejudice of the world (Tapli, 2018; Travelhero, 2019). However, there are parts of the world that are being inundated with travellers—overtourism. It’s a buzz word that has become more prevalent in the last 10 years as the opportunity for travel opens up to new markets, including the rise of middle-class China. This issue will continue to be a major topic with the impending introduction of more Indian travellers soon to join (Baldo, 2017; Alden, 2019). Already cities are trying to take action to combat the issue such as Maya Beach in Thailand closing to tourists, whilst others simply can’t keep up like the push out of locals in Venice (Alden, 2019; Smith, 2019). So what is the solution? 
+The world is more open than it has ever been before. We are in an amazing time of globalisation, where cheap flights, social media and increased wages means travelling is no longer just a luxury but many of us have the opportunity to travel frequently, almost anywhere. People are going to keep travelling and there is no doubt that travel broadens our perspectives and narrows our prejudice of the world (Tapli, 2018; Travelhero, 2019). However, there are parts of the world that are being inundated with travellers — overtourism. It’s a buzz word that has become more prevalent in the last 10 years as the opportunity for travel opens up to new markets, including the rise of middle-class China. This issue will continue to be a major topic with the impending introduction of more Indian travellers soon to join (Baldo, 2017; Alden, 2019). Already cities are trying to take action to combat the issue such as Maya Beach in Thailand closing to tourists, whilst others simply can’t keep up like the push out of locals in Venice (Alden, 2019; Smith, 2019). So what is the solution? 
 
 ### (PART OF) THE SOLUTION
 A study has revealed that 39% of Europeans, 96% of Chinese and 86% of Indians rely on travel blogs for their source of information. In the US, research has shown that travel blogs affect the choices of 92% of social media users (Lozanov, 2018; Ahmad, 2018). Currently, to find blogs you either use search engines or social media accounts. So, travellers are either scrolling through millions of Google searches or viewing the oversaturation of ‘picture-perfect’ scenarios on Instagram (Alyse, 2019; Govender-Ypma, 2015). Destinations and experiences are being restricted, and everyone is paying the price (Burton, 2016; LonelyPlanet, 2019). Neither of these options are user-friendly or responsible-travel friendly.
@@ -34,7 +33,7 @@ shared.world will utilise cloud computing technology and infrastructure. It will
 
 A majority of this application will be run from Google Cloud Platform (GCP), which provides services and infrastructure to allow quick and easy deployment of this multi-tiered web application with scalability and global-availability. It was chosen due to its user-friendly interfaces, abundance of resources, array of services, low-cost and developer support, making it the ultimate choice for first-time developers of this application. 
 
-![ass1_tech](https://user-images.githubusercontent.com/19520346/69199882-32db2500-0b85-11ea-9791-fd79f4ebc9f8.PNG)
+![sw_proposal_tech](./images/sw_proposal_tech.PNG)
  		 
 #### COMPUTE
 
@@ -66,13 +65,13 @@ Alternatively to App Engine, this application could be managed using Kubernetes 
 
 ### THE APPLICATION FEATURES
 
-![Tech_Workflow](https://user-images.githubusercontent.com/19520346/69200163-1095d700-0b86-11ea-8eba-dcef8ab0cebd.jpg)
+![sw_proposal_workflow](./images/sw_proposal_workflow.jpg)
 
 ##### RELATIONAL DATABASE
 
 A simple schema with minimal entities and attributes for ease of analysis and a clean user experience. A user can make or save a post and has multiple interests. A post must be associated with a user and can be posted with only one country but can have multiple interests. They can be uniquely identified by their name for a country and an interest, by email for a user, and by a user email and id for a post.
  
-![Database](https://user-images.githubusercontent.com/19520346/69200203-2dcaa580-0b86-11ea-9a37-ac58a928aed3.jpg)
+![sw_proposal_database](./images/sw_proposal_database.jpg)
  
 ##### INTERACTIVE MAP
 In the Google Cloud Public Datasets program catalogue there is a WorldBank dataset. It contains “Population, total” and “International Visitor, Arrivals” until 2017 for every country. This data will be queried with BigQuery directly to determine the visitor-to-resident ratio, then visualised and constructed with Google Maps Javascript API. 
@@ -83,41 +82,41 @@ Using Cloud Dataproc to initiate a Spark cluster, the posts from all of the sele
 ##### THE USER EXPERIENCE
 The millennial attention span is just 8 seconds, with a preference of photo and video content (Baldo, 2017; Collectivebias, 2017). The main attraction of this application is simplicity. Readers and posters have the same view allowing anyone to be on either side of the conversation. Users select destinations based on a map to allow a visually interactive experience. A single photo and short caption is the book cover for users to select a post, using the same medium as the success of Instagram (Influencer Marketing Hub, 2019). Users and blog posts can each only be associated with 5 interests.
 
-![App_Workflow](https://user-images.githubusercontent.com/19520346/69200228-40dd7580-0b86-11ea-93d4-c874d30e9518.jpg)
+![sw_proposal_page_workflow](./images/sw_proposal_page_workflow.jpg)
   
 (1) LOGIN/SIGNUP – This is the main page where users login or sign-up. Since this application is personalised a user must have an account. They will be asked for username, email and password at sign-up. Once they login they will be able to upload their photo, description and choose their interests on their profile page.
 
-![(1) shared world - LOGIN #](https://user-images.githubusercontent.com/19520346/69200263-5a7ebd00-0b86-11ea-9697-2e086551fceb.png)
+![sw_proposal_page_1](./images/sw_proposal_page_1.PNG)
 
 (2) ABOUT – This is a static page that explains to users how to use shared.world
  
-![(2) shared world - ABOUT #](https://user-images.githubusercontent.com/19520346/69200264-5c488080-0b86-11ea-9c3f-79945649c529.png) 
+![sw_proposal_page_2](./images/sw_proposal_page_2.PNG)
  
 (3) SEARCH – This is the first page of a user’s search. It shows a static map and allows users to select a continent from the dropdown.
 
-![(3) shared world - HOME #](https://user-images.githubusercontent.com/19520346/69200270-5e124400-0b86-11ea-9550-15b725cdaa0f.png)
+![sw_proposal_page_3](./images/sw_proposal_page_3.PNG)
 
 (4) CONTINENT – An interactive Google Maps view of the selected continent is displayed. Each country is coloured based on their visitor-to-resident ratio. From here users select their country of choice from the map or drop-down menu.
 
-![(4) shared world - CHOOSE COUNTRY #](https://user-images.githubusercontent.com/19520346/69200274-5fdc0780-0b86-11ea-9bf4-d58128f7b11d.png)
+![sw_proposal_page_4](./images/sw_proposal_page_4.PNG)
 
 (5) COUNTRY – The user is now shown the country of their choice. On the left hand side will be generic and statistical tourism information about the country. To the right are the customised blog posts. A photo, title, by tagline and short description is shown of each.
 
-![(5) shared world - COUNTRY EDIT #](https://user-images.githubusercontent.com/19520346/69200275-61a5cb00-0b86-11ea-8eb2-644e332dc72b.png)
+![sw_proposal_page_5](./images/sw_proposal_page_5.PNG)
 
 (6) BLOG – After selecting the blog on the previous page users are brought to the post. On the left is information about the poster which is extracted from their profile. On the right is the blog post with the option to save.
 
-![(6) shared world - BLOG PAGE #](https://user-images.githubusercontent.com/19520346/69200279-636f8e80-0b86-11ea-90a8-5a524a00afc6.png)
+![sw_proposal_page_6](./images/sw_proposal_page_6.PNG)
 
 (7) PROFILE – On the left is the user’s photo, username and short description. Underneath this will be their interests. To the right are their published and saved blogs.
  
-![(7) shared world - ACCOUNT #](https://user-images.githubusercontent.com/19520346/69200289-666a7f00-0b86-11ea-8859-4e39dabdf83b.png)
+![sw_proposal_page_7](./images/sw_proposal_page_7.PNG)
  
 # PROJECT COSTS
 
 This cost projection for this proposal is with a target audience of 5,000 users. Since this is a first time project, GCP offers a free resource for 12months with $300 credit to use with any GCP service.  This also extends to the Google Maps Platform. There is also an Always Free program, offering monthly limits; Big Query has 1TB of querying and 10GB of storage per month, and Google Maps has 100,000 free instances per month. However, this only extends to App Engine Standard Environment and Cloud Storage in USA (GCP Django Stack Estimator, 2019; Luke, 2012).
 
-![costs](https://user-images.githubusercontent.com/19520346/69200456-ef81b600-0b86-11ea-88c1-f9a8fb5f23b7.PNG)
+![sw_proposal_cost](./images/sw_proposal_cost.PNG)
 
 # CONCLUSION
 
