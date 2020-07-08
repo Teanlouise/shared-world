@@ -18,7 +18,7 @@ A cloud application solution for overtourism and promoting responsible travel by
 4.	improve quality of travel blogs
 
 # Technologies
-![sw_tech](./images/sw_overview_tech.PNG)
+![sw_tech](./images/sw_overview_tech.png)
 
 The application was written in Django and React, deployed on Google App Engine through docker and Firebase respectively, the database hosted on Cloud SQL and the file storage on Cloud Storage. BigQuery was used to query data from the World Bank dataset, Apache Spark clusters were managed via Dataproc in which a Scala program was run using SparkSQL, as well as an Apache Zeppelin notebook for data analysis using Scala and a Jupyter notebook to create a linear regression model with PySpark. 
 
